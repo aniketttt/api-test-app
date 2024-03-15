@@ -1,6 +1,5 @@
-from flask import render_template, request, redirect, url_for
-from app import app, db
-from app.models import File
+from . import app, db  # Import from current package
+from .models import File
 import os
 from datetime import datetime
 
