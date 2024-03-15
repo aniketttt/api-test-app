@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 
+RUN apt install python3-pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
